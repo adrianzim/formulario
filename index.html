@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Evento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cadastro para o Evento</h1>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <!-- Nome Completo -->
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+
+            <!-- Telefone -->
+            <label for="telefone">Telefone (opcional):</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+            <!-- Mensagem/Pergunta -->
+            <label for="mensagem">Mensagem/Pergunta:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem ou pergunta..."></textarea>
+
+            <!-- Receber Novidades -->
+            <label for="novidades">
+                <input type="checkbox" id="novidades" name="novidades">
+                Gostaria de receber novidades sobre o evento?
+            </label>
+
+            <!-- Botão Enviar -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
